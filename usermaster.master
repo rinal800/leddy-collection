@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="usermaster.master.cs" Inherits="usermaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+
+    <link rel="stylesheet" href="css/aos.css"/>
+
+    <link rel="stylesheet" href="css/ionicons.min.css"/>
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css"/>
+    <link rel="stylesheet" href="css/jquery.timepicker.css"/>
+
+    
+    <link rel="stylesheet" href="css/flaticon.css"/>
+    <link rel="stylesheet" href="css/icomoon.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <asp:ContentPlaceHolder id="head" runat="server"/>
+
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Leddy<small>Collection</small></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+	         
+	          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="shop.aspx">Shop</a>
+                <a class="dropdown-item" href="categorys.aspx">categorys</a>
+                <a class="dropdown-item" href="carts.aspx">Cart</a>
+                <a class="dropdown-item" href="checkout.aspx">Checkout</a>
+              </div>
+            </li>
+	          <li class="nav-item"><a href="contact.aspx" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="registar.aspx" class="nav-link">registar</a></li>
+               
+                <li class="nav-item">  <asp:LinkButton ID="LinkButton1" class="nav-link" runat="server"  ForeColor="White" PostBackUrl="~/login.aspx">Login</asp:LinkButton></li>
+                <li class="nav-item">   <asp:LinkButton ID="LinkButton2" runat="server" class="nav-link" ForeColor="White" PostBackUrl="~/logout.aspx">Logout</asp:LinkButton></li>
+               
+              
+             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                
+	          <li class="nav-item cart"><a href="carts.aspx" class="nav-link" ><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><asp:Literal ID="Literal2" runat="server" Text=""></asp:Literal><small></small></span></a></li>
+                <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" ></script>  
+<div id="google_translate_element" style="color:black;"></div>
+
+	        </ul>
+	      </div>
+		  </div>
+	  </nav>
+        
+        </asp:ContentPlaceHolder>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+              <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image: url(images/martin-pitonak_201907_0649-edit.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+            <div class="col-md-8 col-sm-12 text-center ftco-animate">
+            	
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image: url(images/pexels-photo-3198229.jpeg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+            <div class="col-md-8 col-sm-12 text-center ftco-animate">
+            	
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image: url(images/Df82dxjX4AAKIqS.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+            <div class="col-md-8 col-sm-12 text-center ftco-animate">
+            	
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+                   <div class="slider-item" style="background-image: url(images/martin-pitonak_20190206_957-edit.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+            <div class="col-md-8 col-sm-12 text-center ftco-animate">
+            	
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    
+        </asp:ContentPlaceHolder>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder4" runat="server">
+             <footer class="ftco-footer ftco-section img" style="padding:2em">
+    	
+            <%--<audio src="Odhani – Made In China _ Rajkummar Rao & Mouni Roy _  Neha Kakkar & Darshan Raval _ Sachin – Jigar.mp3" controls="controls" 
+        aria-atomic="false" aria-hidden="True" autoplay="autoplay" aria-dropeffect="none"
+         hidden="hidden" />--%>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Project is Designed <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Juli Bhaliya, Ruchika Bhanderi</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+        </asp:ContentPlaceHolder>
+      
+              <script>
+		$(document).ready(function(){
+		   
+		var quantitiy=0;
+		   $('.quantity-right-plus').click(function(e){
+		       
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		            
+		            $('#quantity').val(quantity + 1);
+
+		          
+		            // Increment
+		        
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		      
+		            // Increment
+		            if(quantity>0){
+		            $('#quantity').val(quantity - 1);
+		            }
+		    });
+		    
+		});
+	</script>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
